@@ -337,6 +337,267 @@
     </div>
   </section>
 
+  <!-- ======= PROJECTS ======= -->
+  <section id="projects" class="section-wrapper" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="section-label fira" aria-hidden="true">03 // projects</div>
+      <h2 class="section-heading" id="projects-heading">Projects</h2>
+
+      <!-- Filter buttons - JS interaction -->
+      <div class="filter-bar d-flex flex-wrap gap-2 mb-5" role="group" aria-label="Filter projects by technology">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="llm">LLM / AI</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="ml">ML</button>
+      </div>
+
+      <div class="row g-4" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <div class="col-lg-6" data-category="llm">
+          <article class="project-card h-100" aria-labelledby="proj1-title">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon-wrap" aria-hidden="true">
+                  <i class="bi bi-robot"></i>
+                </div>
+                <div class="project-links" aria-label="Project links">
+                  <a href="https://github.com/Havirbhavi" target="_blank" rel="noopener noreferrer"
+                    class="project-link" aria-label="View AdventureLLM on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title" id="proj1-title">AdventureLLM</h3>
+              <p class="project-subtitle fira">LLM Benchmarking for Sequential Decision-Making (Zork)</p>
+              <p class="project-desc">
+                Modular Zork benchmarking pipeline logging per-turn telemetry (score, moves, inventory, tokens)
+                to CSV. Benchmarked 5 LLMs with score-distribution comparisons, identifying failure patterns
+                tied to prompt design and context limits.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag tag--cyan">Python</span>
+                <span class="tag tag--purple">OpenAI API</span>
+                <span class="tag tag--cyan">LLM</span>
+                <span class="tag tag--purple">Benchmarking</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-6" data-category="cloud">
+          <article class="project-card h-100" aria-labelledby="proj2-title">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon-wrap" aria-hidden="true">
+                  <i class="bi bi-diagram-3-fill"></i>
+                </div>
+                <div class="project-links" aria-label="Project links">
+                  <a href="https://github.com/Havirbhavi" target="_blank" rel="noopener noreferrer"
+                    class="project-link" aria-label="View GeoTransit Analytics on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title" id="proj2-title">GeoTransit Analytics</h3>
+              <p class="project-subtitle fira">TriMet Cloud Data Engineering Pipeline</p>
+              <p class="project-desc">
+                Cloud pipeline ingesting TriMet GPS telemetry (Jan 1–8, 2023), processing 35–40M rows (~40GB)
+                across ~200 vehicles/day. Built Pub/Sub services with cron scheduling and 20 validation rules
+                for reporting-ready dashboard metrics.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag tag--cyan">GCP Pub/Sub</span>
+                <span class="tag tag--purple">PostgreSQL</span>
+                <span class="tag tag--cyan">GCP VM</span>
+                <span class="tag tag--purple">Data Engineering</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-6" data-category="ml">
+          <article class="project-card h-100" aria-labelledby="proj3-title">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon-wrap" aria-hidden="true">
+                  <i class="bi bi-tree-fill"></i>
+                </div>
+                <div class="project-links" aria-label="Project links">
+                  <a href="https://github.com/Havirbhavi" target="_blank" rel="noopener noreferrer"
+                    class="project-link" aria-label="View Coffee Leaf Disease Classifier on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title" id="proj3-title">Coffee Leaf Disease Classifier</h3>
+              <p class="project-subtitle fira">ResNet50 + MobileNet Transfer Learning</p>
+              <p class="project-desc">
+                5-class disease classifier using ResNet50 and MobileNet with transfer learning and data
+                augmentation. Achieved ~99.9% validation accuracy; presented at IEEE ICESIC 2024 international conference.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag tag--cyan">PyTorch</span>
+                <span class="tag tag--purple">ResNet50</span>
+                <span class="tag tag--cyan">Transfer Learning</span>
+                <span class="tag tag--purple">IEEE Published</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Project 4 - Growly -->
+        <div class="col-lg-6" data-category="llm">
+          <article class="project-card h-100" aria-labelledby="proj4-title">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div class="project-icon-wrap" aria-hidden="true">
+                  <i class="bi bi-envelope-open-fill"></i>
+                </div>
+                <div class="project-links" aria-label="Project links">
+                  <a href="https://github.com/Havirbhavi" target="_blank" rel="noopener noreferrer"
+                    class="project-link" aria-label="View Growly on GitHub">
+                    <i class="bi bi-github" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title" id="proj4-title">Growly – Job Tracker</h3>
+              <p class="project-subtitle fira">LLM-Powered Gmail Job Application Monitor</p>
+              <p class="project-desc">
+                Two-step LLM pipeline classifying email subjects and extracting structured job data into
+                PostgreSQL. React dashboard with FastAPI backend on AWS, handling high-concurrency with
+                idempotent writes and deduplication.
+              </p>
+              <div class="project-tags" aria-label="Technologies">
+                <span class="tag tag--cyan">FastAPI</span>
+                <span class="tag tag--purple">React</span>
+                <span class="tag tag--cyan">AWS RDS</span>
+                <span class="tag tag--purple">LLM Pipeline</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section id="skills" class="section-wrapper section-dark" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="section-label fira" aria-hidden="true">04 // skills</div>
+      <h2 class="section-heading" id="skills-heading">Skills</h2>
+
+      <!-- Bootstrap Carousel - beyond class usage -->
+      <div id="skillsCarousel" class="carousel slide skills-carousel mb-5" data-bs-ride="carousel" aria-label="Skills carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#skillsCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="skill-slide">
+              <div class="skill-slide-icon" aria-hidden="true"><i class="bi bi-code-slash"></i></div>
+              <h3 class="skill-slide-title">Languages</h3>
+              <div class="skill-chips" aria-label="Programming languages">
+                <span class="skill-chip">Python</span><span class="skill-chip">SQL</span>
+                <span class="skill-chip">Java</span><span class="skill-chip">C++</span>
+                <span class="skill-chip">JavaScript</span><span class="skill-chip">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="skill-slide">
+              <div class="skill-slide-icon" aria-hidden="true"><i class="bi bi-cpu-fill"></i></div>
+              <h3 class="skill-slide-title">ML / GenAI</h3>
+              <div class="skill-chips" aria-label="Machine learning technologies">
+                <span class="skill-chip">PyTorch</span><span class="skill-chip">TensorFlow</span>
+                <span class="skill-chip">RAG</span><span class="skill-chip">LLM</span>
+                <span class="skill-chip">XGBoost</span><span class="skill-chip">NLP</span>
+                <span class="skill-chip">Pandas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="skill-slide">
+              <div class="skill-slide-icon" aria-hidden="true"><i class="bi bi-server"></i></div>
+              <h3 class="skill-slide-title">Backend & Systems</h3>
+              <div class="skill-chips" aria-label="Backend technologies">
+                <span class="skill-chip">FastAPI</span><span class="skill-chip">REST APIs</span>
+                <span class="skill-chip">Spring Boot</span><span class="skill-chip">PostgreSQL</span>
+                <span class="skill-chip">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="skill-slide">
+              <div class="skill-slide-icon" aria-hidden="true"><i class="bi bi-cloud-fill"></i></div>
+              <h3 class="skill-slide-title">Infrastructure</h3>
+              <div class="skill-chips" aria-label="Infrastructure technologies">
+                <span class="skill-chip">AWS (SQS, S3, RDS)</span><span class="skill-chip">GCP</span>
+                <span class="skill-chip">Docker</span><span class="skill-chip">Kubernetes</span>
+                <span class="skill-chip">Terraform</span><span class="skill-chip">CI/CD</span>
+                <span class="skill-chip">Git</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev" aria-label="Previous skill category">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next" aria-label="Next skill category">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Skill Bars -->
+      <div class="skill-bars row g-3" aria-label="Skill proficiency levels">
+        <div class="col-md-6">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Python / ML</span><span class="fira accent-cyan" aria-label="95 percent">95%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Python and ML proficiency">
+              <div class="skill-bar-fill" data-width="95"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>LLM / RAG / GenAI</span><span class="fira accent-cyan" aria-label="90 percent">90%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="LLM and GenAI proficiency">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>FastAPI / Backend</span><span class="fira accent-cyan" aria-label="88 percent">88%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="FastAPI and backend proficiency">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Cloud (AWS / GCP)</span><span class="fira accent-cyan" aria-label="85 percent">85%</span></div>
+            <div class="skill-bar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Cloud proficiency">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 <!-- ======= FOOTER ======= -->
   <footer class="site-footer" role="contentinfo">
     <div class="container text-center">
