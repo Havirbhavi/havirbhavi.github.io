@@ -597,7 +597,84 @@
 
     </div>
   </section>
+  <!-- ======= SKILLS CHART ======= -->
+  <section id="chart" class="section-wrapper" aria-labelledby="chart-heading">
+    <div class="container">
+      <div class="section-label fira" aria-hidden="true">05 // tech breakdown</div>
+      <h2 class="section-heading" id="chart-heading">Tech Breakdown</h2>
+      <p class="chart-intro fira">Languages and tools across all projects</p>
 
+      <div class="row align-items-center g-5 justify-content-center">
+        <div class="col-md-5 col-lg-4">
+          <div class="chart-wrapper" aria-label="Donut chart of technologies used">
+            <canvas id="techDonut" aria-label="Technology distribution chart" role="img"></canvas>
+            <div class="chart-center-label" aria-hidden="true">
+              <span class="chart-center-num">12</span>
+              <span class="chart-center-text fira">Technologies</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-lg-6">
+          <div class="chart-legend" id="chartLegend" aria-label="Chart legend" role="list">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= GITHUB ======= -->
+  <section id="github" class="section-wrapper" aria-labelledby="github-heading">
+    <div class="container">
+      <div class="section-label fira" aria-hidden="true">06 // github</div>
+      <h2 class="section-heading" id="github-heading">GitHub Activity</h2>
+      <p class="github-intro text-secondary mb-4">Live data fetched from the GitHub API</p>
+
+      <!-- GitHub Stats Cards -->
+      <div class="row g-4 mb-5" id="githubStats">
+        <div class="col-6 col-md-3">
+          <div class="gh-stat-card" aria-label="Public repositories">
+            <i class="bi bi-folder2-open gh-stat-icon" aria-hidden="true"></i>
+            <span class="gh-stat-num" id="ghRepos">--</span>
+            <span class="gh-stat-label fira">Repos</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="gh-stat-card" aria-label="Followers">
+            <i class="bi bi-people-fill gh-stat-icon" aria-hidden="true"></i>
+            <span class="gh-stat-num" id="ghFollowers">--</span>
+            <span class="gh-stat-label fira">Followers</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="gh-stat-card" aria-label="Following">
+            <i class="bi bi-person-check-fill gh-stat-icon" aria-hidden="true"></i>
+            <span class="gh-stat-num" id="ghFollowing">--</span>
+            <span class="gh-stat-label fira">Following</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="gh-stat-card" aria-label="Stars earned">
+            <i class="bi bi-star-fill gh-stat-icon" aria-hidden="true"></i>
+            <span class="gh-stat-num" id="ghStars">--</span>
+            <span class="gh-stat-label fira">Stars</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitHub Repos -->
+      <h3 class="section-subheading" id="repos-heading">Latest Repositories</h3>
+      <div class="row g-3" id="githubRepos" aria-labelledby="repos-heading" aria-live="polite">
+        <!-- Injected by JS -->
+        <div class="col-12 text-center gh-loading" aria-label="Loading repositories">
+          <span class="fira" style="color: var(--text-muted);">
+            <i class="bi bi-arrow-repeat spin me-2" aria-hidden="true"></i>Fetching from GitHub API...
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 <!-- ======= FOOTER ======= -->
   <footer class="site-footer" role="contentinfo">
     <div class="container text-center">
