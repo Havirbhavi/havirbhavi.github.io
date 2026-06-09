@@ -17,6 +17,8 @@
  *  12. Back to top button
  *  13. GitHub API — live stats + repos
  *  14. Particle burst on click
+ *  15. Dark/Light Mode
+ *  16. Chart
  */
 
 "use strict";
