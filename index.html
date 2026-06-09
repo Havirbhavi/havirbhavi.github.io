@@ -129,6 +129,213 @@
     </div>
   </section>
 
+  <!-- ======= ABOUT ======= -->
+  <section id="about" class="section-wrapper" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="section-label fira" aria-hidden="true">01 // about</div>
+      <h2 class="section-heading" id="about-heading">About Me</h2>
+
+      <div class="row align-items-center g-5">
+        <div class="col-lg-4 text-center">
+          <div class="avatar-wrapper" aria-label="Profile image placeholder">
+            <div class="avatar-hex" aria-hidden="true">
+              <img
+                  src="profile.jpg"
+                  alt="Havirbhavi Pothugunta"
+                  class="avatar-photo"
+                />
+              <div class="orbit orbit-1" aria-hidden="true"><span class="orbit-dot"></span></div>
+              <div class="orbit orbit-2" aria-hidden="true"><span class="orbit-dot"></span></div>
+            </div>
+          </div>
+          <!-- Accordion - Bootstrap element not used in class -->
+          <div class="accordion mt-4 accordion-galaxy" id="quickFactsAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#quickFacts"
+                  aria-expanded="false" aria-controls="quickFacts">
+                  <i class="bi bi-stars me-2" aria-hidden="true"></i> Quick Facts
+                </button>
+              </h3>
+              <div id="quickFacts" class="accordion-collapse collapse" data-bs-parent="#quickFactsAccordion">
+                <div class="accordion-body fira text-start">
+                  <p>📍 Portland, OR</p>
+                  <p>🎓 MS CS @ PSU — GPA 3.89</p>
+                  <p>📄 4 IEEE/Springer Publications</p>
+                  <p>🚀 200+ beta users on Growly</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="about-card">
+            <p class="about-text">
+              I'm a <span class="highlight">Machine Learning Engineer</span> and
+              Co-Founder passionate about building end-to-end intelligent systems —
+              from LLM pipelines and RAG architectures to cloud-deployed production APIs.
+            </p>
+            <p class="about-text">
+              Currently pursuing my <span class="highlight">MS in Computer Science</span> at
+              Portland State University (GPA 3.89), I bring research depth from
+              international publications and startup grit from co-founding
+              <span class="highlight">Growly</span>, where I built ML-powered job-tracking
+              workflows onboarding 200+ users.
+            </p>
+            <p class="about-text">
+              My work lives at the intersection of <span class="highlight">deep learning</span>,
+              <span class="highlight">generative AI</span>, and scalable backend systems.
+              I love turning complex research into real, deployable products.
+            </p>
+
+            <div class="about-stats row g-3 mt-3">
+              <div class="col-4">
+                <div class="stat-box" aria-label="4 publications">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number" data-target="4">0</span>
+                  </div>
+                  <span class="stat-label">Publications</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-box" aria-label="200 plus beta users">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number" data-target="200">0</span>
+                    <span class="stat-plus">+</span>
+                  </div>
+                  <span class="stat-label">Beta Users</span>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-box" aria-label="99.9% validation accuracy">
+                  <div class="stat-number-wrap">
+                    <span class="stat-number" data-target="99">0</span>
+                    <span class="stat-plus">.9%</span>
+                  </div>
+                  <span class="stat-label">Val. Accuracy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE / PREVIOUS WORK ======= -->
+  <section id="experience" class="section-wrapper section-dark" aria-labelledby="experience-heading">
+    <div class="container">
+      <div class="section-label fira" aria-hidden="true">02 // experience</div>
+      <h2 class="section-heading" id="experience-heading">Previous Work</h2>
+
+      <!-- Timeline -->
+      <div class="timeline" role="list">
+
+        <!-- Growly -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="tl-header d-flex flex-wrap justify-content-between align-items-start gap-2">
+              <div>
+                <h3 class="tl-title">Co-Founder & Fullstack Engineer</h3>
+                <p class="tl-company"><i class="bi bi-building me-1" aria-hidden="true"></i>Growly (Startup)</p>
+              </div>
+              <span class="tl-date fira">2025 · USA</span>
+            </div>
+            <ul class="tl-bullets" role="list">
+              <li>Developed a two-step LLM pipeline to auto-monitor job applications from Gmail: classify email subjects and extract structured fields (title, company, status, date) into PostgreSQL.</li>
+              <li>Implemented batching and high-concurrency ingestion with validation, deduplication, idempotent writes, and retries.</li>
+              <li>Delivered FastAPI services and a React dashboard deployed on AWS (RDS); onboarded 200+ beta users with 100 active users.</li>
+            </ul>
+            <div class="tl-tags" aria-label="Technologies used">
+              <span class="tag">LLM</span><span class="tag">FastAPI</span><span class="tag">React</span>
+              <span class="tag">PostgreSQL</span><span class="tag">AWS RDS</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Research Assistant -->
+        <article class="timeline-item" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <div class="tl-header d-flex flex-wrap justify-content-between align-items-start gap-2">
+              <div>
+                <h3 class="tl-title">Research Assistant – Deep Learning</h3>
+                <p class="tl-company"><i class="bi bi-building me-1" aria-hidden="true"></i>Amrita School of Computing</p>
+              </div>
+              <span class="tl-date fira">Aug 2023 – Nov 2024</span>
+            </div>
+            <ul class="tl-bullets" role="list">
+              <li>Architected a ResNet50 + MobileNet 5-class coffee leaf disease classifier using transfer learning with augmentation (rotation, flip, zoom).</li>
+              <li>Presented at an international conference; achieved 99.9% validation accuracy.</li>
+            </ul>
+            <div class="tl-tags" aria-label="Technologies used">
+              <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">ResNet50</span>
+              <span class="tag">Transfer Learning</span><span class="tag">IEEE</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Education -->
+      <h3 class="section-subheading mt-5" id="education-heading">Education</h3>
+      <div class="row g-4" aria-labelledby="education-heading">
+        <div class="col-md-6">
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+              <h4 class="edu-degree">M.S. Computer Science</h4>
+              <p class="edu-school">Portland State University</p>
+              <p class="edu-meta fira">Sep 2024 – Mar 2026 · <span class="accent-cyan">GPA 3.89 / 4.0</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true"><i class="bi bi-mortarboard-fill"></i></div>
+            <div>
+              <h4 class="edu-degree">B.Tech Computer Science</h4>
+              <p class="edu-school">Amrita Vishwa Vidyapeetham</p>
+              <p class="edu-meta fira">Oct 2020 – May 2024 · <span class="accent-cyan">GPA 8.08 / 10</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Publications -->
+      <h3 class="section-subheading mt-5" id="pubs-heading">Publications</h3>
+      <div class="pub-list" aria-labelledby="pubs-heading" role="list">
+        <a href="https://ieeexplore.ieee.org/document/10846287" target="_blank" rel="noopener noreferrer"
+           class="pub-item" role="listitem" aria-label="IEEE ICESIC 2024 publication">
+          <i class="bi bi-file-earmark-text-fill pub-icon" aria-hidden="true"></i>
+          <span class="fira pub-text">IEEE ICESIC 2024</span>
+          <i class="bi bi-box-arrow-up-right pub-ext-icon" aria-hidden="true"></i>
+        </a>
+        <a href="https://ieeexplore.ieee.org/document/10511660" target="_blank" rel="noopener noreferrer"
+           class="pub-item" role="listitem" aria-label="IEEE INOCON 2024 publication">
+          <i class="bi bi-file-earmark-text-fill pub-icon" aria-hidden="true"></i>
+          <span class="fira pub-text">IEEE INOCON 2024</span>
+          <i class="bi bi-box-arrow-up-right pub-ext-icon" aria-hidden="true"></i>
+        </a>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-97-8336-6_7" target="_blank" rel="noopener noreferrer"
+           class="pub-item" role="listitem" aria-label="Springer ICDSNE 2024 publication">
+          <i class="bi bi-file-earmark-text-fill pub-icon" aria-hidden="true"></i>
+          <span class="fira pub-text">Springer ICDSNE 2024</span>
+          <i class="bi bi-box-arrow-up-right pub-ext-icon" aria-hidden="true"></i>
+        </a>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-69982-5_24" target="_blank" rel="noopener noreferrer"
+           class="pub-item" role="listitem" aria-label="Springer ICCIDS 2024 publication">
+          <i class="bi bi-file-earmark-text-fill pub-icon" aria-hidden="true"></i>
+          <span class="fira pub-text">Springer ICCIDS 2024</span>
+          <i class="bi bi-box-arrow-up-right pub-ext-icon" aria-hidden="true"></i>
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
 
 <!-- ======= FOOTER ======= -->
   <footer class="site-footer" role="contentinfo">
